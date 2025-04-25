@@ -39,17 +39,17 @@ Features
 
  7. Example Workflows
  
-1. Create a Program
+- Create a Program
    curl -X POST http://127.0.0.1:8000/programs/ \
       -H "Content-Type: application/json" \
       -d '{"name":"Malaria","description":"Check for Malaria"}'
-2. Register a Client
+- Register a Client
    curl -X POST http://127.0.0.1:8000/clients/ \
       -H "Content-Type: application/json" \
       -d '{"name":"Keith","age":20,"gender":"male"}'
-3. Enroll the Client
+- Enroll the Client
    curl -X POST http://127.0.0.1:8000/clients/1/enroll/3
-4. View Client Profile
+- View Client Profile
    curl http://127.0.0.1:8000/clients/1
 
  8. Added Inovation
