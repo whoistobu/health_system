@@ -32,7 +32,7 @@ Features
 6. Running
 
  create virtual enviroment - venv\Scripts\activate (windows)
- Install dependacies - pip install -r requirements.txt
+ Install dependacies - pip install fastapi uvicorn sqlalchemy
  Start the server - uvicorn main:app --reload
  on the browser open - http://127.0.0.1:8000/docs (or whichever port you are using)
  run the program
@@ -40,17 +40,17 @@ Features
  7. Example Workflows
  
 - Create a Program
-   curl -X POST http://127.0.0.1:8000/programs/ \
+   http://127.0.0.1:8000/programs/ \
       -H "Content-Type: application/json" \
       -d '{"name":"Malaria","description":"Check for Malaria"}'
 - Register a Client
-   curl -X POST http://127.0.0.1:8000/clients/ \
+   http://127.0.0.1:8000/clients/ \
       -H "Content-Type: application/json" \
       -d '{"name":"Keith","age":20,"gender":"male"}'
 - Enroll the Client
-   curl -X POST http://127.0.0.1:8000/clients/1/enroll/3
+   http://127.0.0.1:8000/clients/1/enroll/3
 - View Client Profile
-   curl http://127.0.0.1:8000/clients/1
+   http://127.0.0.1:8000/clients/1
 
  8. Added Inovation
 
