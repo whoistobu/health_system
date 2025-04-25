@@ -20,7 +20,7 @@ Features
   - Clear 400 responses for validation or integrity errors  
   - Clean 404 when resources are not found
 
-Tech Stack
+5. Tech Stack
 
 - Language & Framework: Python, FastAPI  
 - ORM: SQLAlchemy  
@@ -29,7 +29,7 @@ Tech Stack
 - Server: Uvicorn (ASGI)  
 - Testing:`pytest` (basic smoke tests)  
 
- Running
+6. Running
 
  create virtual enviroment - venv\Scripts\activate (windows)
  Install dependacies - pip install -r requirements.txt
@@ -37,7 +37,7 @@ Tech Stack
  on the browser open - http://127.0.0.1:8000/docs (or whichever port you are using)
  run the program
 
- Example Workflows
+ 7. Example Workflows
  
 1. Create a Program
    curl -X POST http://127.0.0.1:8000/programs/ \
@@ -52,7 +52,7 @@ Tech Stack
 4. View Client Profile
    curl http://127.0.0.1:8000/clients/1
 
- Added Inovation
+ 8. Added Inovation
 
  I have added a rule-based health risk scoring program that automatically adds points for age, gender, and programs so it would provide a general summary of the clients health and help the doctor take care of the patient
 
